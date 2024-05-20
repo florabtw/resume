@@ -65,10 +65,12 @@ export function Role({
 
 const Company = styled.h3`
   display: inline;
+  font-size: 1rem;
 `;
 
 const RoleTitle = styled.h4`
   display: inline;
+  font-size: 1rem;
 `;
 
 const Location = styled.span``;

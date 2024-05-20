@@ -19,7 +19,7 @@ function App() {
 }
 
 const Background = styled.div`
-  background: #ddd;
+  background: #fafafa;
   height: 100%;
   overflow-y: scroll;
 

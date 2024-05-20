@@ -40,4 +40,5 @@ function Project({ description, link, title }: ProjectProps) {
 const Name = styled.h3`
   display: inline;
   font-weight: normal;
+  font-size: 1rem;
 `;
