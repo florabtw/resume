@@ -1,36 +1,29 @@
 import styled from "styled-components";
 
+import { Title } from "components/Library";
+
 export default function Header() {
   return (
-    <Banner>
+    <section>
+      <Title>Hello, I'm</Title>
       <Name>Flora Moon</Name>
       <Text>Remote • Portland, OR</Text>
       <Text>
         <a href="mailto:hello@flora.cool">hello@flora.cool</a> •{" "}
         <a href="https://flora.cool">flora.cool</a>
       </Text>
-    </Banner>
+      <Rule />
+    </section>
   );
 }
 
-const Banner = styled.section`
-  background: var(--c-accent);
-  color: black;
-  color: white;
-
-  a {
-    color: inherit;
-  }
-
-  @media (min-width: 960px) {
-    margin: -1rem -2rem 0;
-    padding: 2rem;
-  }
+const Rule = styled.hr`
+  border-top: 4px solid var(--c-accent);
+  margin-top: 0.5rem;
 `;
 
 const Name = styled.h1`
-  font-size: 1.75rem;
-  font-weight: 900;
+  font-size: 1.5rem;
   margin: -0.5rem 0 0.5rem;
 `;
 
