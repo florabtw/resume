@@ -19,7 +19,7 @@ function App() {
 }
 
 const Background = styled.div`
-  @media (min-width: 960px) {
+  @media screen and (min-width: 960px) {
     align-items: center;
     background: #fafafa;
     display: flex;

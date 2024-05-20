@@ -5,15 +5,22 @@ export const Page = styled.div`
   line-height: 1.4;
   padding: 1rem 2rem 2rem;
 
-  @media (min-width: 960px) {
+  @media print, (min-width: 960px) {
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+
+  @media print {
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (min-width: 960px) {
     aspect-ratio: 0.7727; /* 8.5in / 11in */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    font-size: 0.875rem;
-    line-height: 1.25;
-    padding: 1rem 2rem 2rem;
     position: relative;
     width: 800px;
+    padding: 1rem 2rem 2rem;
 
     &:before,
     &:after {
