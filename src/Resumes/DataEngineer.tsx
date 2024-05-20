@@ -26,10 +26,6 @@ export default function DataEngineer() {
             Developed a generic component library using React to enable quickly
             creating a new marketplace.
           </li>
-          <li>
-            Collaborated with Product and Design to redesign the marketplace for
-            a mobile-friendly experience.
-          </li>
         </Role>
         <Role
           title="Senior Software Engineer"

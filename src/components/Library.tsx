@@ -15,12 +15,13 @@ export const Page = styled.div`
   }
 
   @media screen and (min-width: 960px) {
-    aspect-ratio: 0.7727; /* 8.5in / 11in */
+    aspect-ratio: 8.5 / 11; /* US Letter */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: auto;
+    min-height: 0; /* force aspect ratio if content overflows */
+    padding: 1rem 2rem 2rem;
     position: relative;
     width: 800px;
-    padding: 1rem 2rem 2rem;
 
     &:before,
     &:after {
