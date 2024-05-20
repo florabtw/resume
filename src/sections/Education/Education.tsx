@@ -11,8 +11,7 @@ export default function Education() {
         <Degree>B.S., Computer Science</Degree>
       </div>
       <div>
-        <Location>Columbia, MO</Location> •{" "}
-        <Duration>August, 2012–May, 2015</Duration>
+        <Location>Columbia, MO</Location> • <Duration>2015</Duration>
       </div>
     </section>
   );
