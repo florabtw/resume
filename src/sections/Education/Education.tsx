@@ -24,6 +24,7 @@ const School = styled.h3`
 
 const Degree = styled.h4`
   display: inline;
+  white-space: nowrap;
 `;
 
 const Location = styled.span``;

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Page = styled.div`
   background: white;
+  line-height: 1.4;
+  padding: 1rem 2rem 2rem;
 
   @media (min-width: 960px) {
     aspect-ratio: 0.7727; /* 8.5in / 11in */

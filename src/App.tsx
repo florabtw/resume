@@ -19,16 +19,15 @@ function App() {
 }
 
 const Background = styled.div`
-  background: #fafafa;
-  height: 100%;
-  overflow-y: scroll;
-  position: relative;
-  z-index: -3;
-
   @media (min-width: 960px) {
     align-items: center;
+    background: #fafafa;
     display: flex;
+    height: 100%;
+    overflow-y: scroll;
     padding: 4rem 0;
+    position: relative;
+    z-index: -3;
   }
 `;
 
