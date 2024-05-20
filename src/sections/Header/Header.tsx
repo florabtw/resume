@@ -4,7 +4,7 @@ import { Title } from "components/Library";
 
 export default function Header() {
   return (
-    <section>
+    <Section>
       <Title>Hello, I'm</Title>
       <Name>Flora Moon</Name>
       <Text>Remote • Portland, OR</Text>
@@ -12,14 +12,13 @@ export default function Header() {
         <a href="mailto:hello@flora.cool">hello@flora.cool</a> •{" "}
         <a href="https://flora.cool">flora.cool</a>
       </Text>
-      <Rule />
-    </section>
+    </Section>
   );
 }
 
-const Rule = styled.hr`
-  border-top: 4px solid var(--c-accent);
-  margin-top: 0.5rem;
+const Section = styled.section`
+  border-bottom: 2px solid var(--c-accent);
+  padding-bottom: 0.5rem;
 `;
 
 const Name = styled.h1`

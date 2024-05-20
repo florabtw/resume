@@ -22,8 +22,12 @@ const Background = styled.div`
   background: #fafafa;
   height: 100%;
   overflow-y: scroll;
+  position: relative;
+  z-index: -3;
 
   @media (min-width: 960px) {
+    align-items: center;
+    display: flex;
     padding: 4rem 0;
   }
 `;

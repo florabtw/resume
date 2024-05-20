@@ -5,15 +5,36 @@ export const Page = styled.div`
 
   @media (min-width: 960px) {
     aspect-ratio: 0.7727; /* 8.5in / 11in */
-    box-shadow:
-      0 15px 30px rgba(0, 0, 0, 0.3),
-      0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
     font-size: 0.875rem;
     line-height: 1.25;
-    overflow: hidden;
     padding: 1rem 2rem 2rem;
+    position: relative;
     width: 800px;
+
+    &:before,
+    &:after {
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      z-index: -2;
+    }
+
+    &:before {
+      left: -5px;
+      top: 2px;
+      transform: rotate(-1.5deg);
+    }
+
+    &:after {
+      left: -3px;
+      top: 0px;
+      transform: rotate(2.4deg);
+    }
   }
 `;
 
