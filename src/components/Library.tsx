@@ -53,3 +53,20 @@ export const Title = styled.h1`
   line-height: 1.2;
   margin: 1rem 0 0.5rem 0;
 `;
+
+export const Download = styled.a`
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  @media print {
+    display: none;
+  }
+
+  @media screen and (min-width: 960px) {
+    left: 400px;
+    right: auto;
+    top: -2.5rem;
+    transform: translateX(-50%);
+  }
+`;

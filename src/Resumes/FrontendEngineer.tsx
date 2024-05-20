@@ -3,39 +3,16 @@ import Experience, { Role } from "sections/Experience/Experience";
 import Extras, { Extra } from "sections/Extras/Extras";
 import Header from "sections/Header/Header";
 import Projects from "sections/Projects/Projects";
-import { Page } from "components/Library";
-import styled from "styled-components";
+import { Download, Page } from "components/Library";
 
-const Download = styled.a`
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
-
-  @media print {
-    display: none;
-  }
-
-  @media screen and (min-width: 960px) {
-    left: 400px;
-    right: auto;
-    top: -2.5rem;
-    transform: translateX(-50%);
-  }
-`;
-
-export default function Generic() {
+export default function FrontendEngineer() {
   return (
     <Page>
-      <Download
-        download="FloraMoon-SWE-Resume.pdf"
-        href="/FloraMoon-SWE-Resume.pdf"
-      >
-        Download
-      </Download>
+      <Download href="/FloraMoon-Frontend-Resume.pdf">Download</Download>
       <Header />
       <Experience>
         <Role
-          title="Senior Software Engineer"
+          title="Senior Frontend Engineer"
           company="HubSpot"
           location="Remote"
           start={new Date("2022-01-10")}
@@ -55,7 +32,7 @@ export default function Generic() {
           </li>
         </Role>
         <Role
-          title="Senior Software Engineer"
+          title="Senior Frontend Engineer"
           company="Evernote"
           location="Remote"
           start={new Date("2020-04-30")}
@@ -120,7 +97,8 @@ export default function Generic() {
           end={new Date("2017-02-28")}
         >
           <li>
-            Developed an ETL pipeline in Scala, Play, Neo4J and Apache Kafka.
+            Developed an ETL pipeline for a Fortune 500 client in Scala, Play,
+            Neo4J and Apache Kafka.
           </li>
         </Role>
       </Experience>
@@ -135,8 +113,7 @@ export default function Generic() {
         />
         <Extra
           title="Interests"
-          description="D&D, gaming, coffee, yoga, reading,
-          sustainability, ASL, queer rights, neurodivergence"
+          description="D&D, gaming, coffee, yoga, reading, sustainability, ASL, queer rights, neurodivergence"
         />
       </Extras>
     </Page>

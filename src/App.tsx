@@ -1,12 +1,26 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 
-import Generic from "Resumes/Generic";
+import DataEngineer from "Resumes/DataEngineer";
+import FrontendEngineer from "Resumes/FrontendEngineer";
+import SoftwareEngineer from "Resumes/SoftwareEngineer";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Generic />,
+    element: <SoftwareEngineer />,
+  },
+  {
+    path: "/swe",
+    element: <SoftwareEngineer />,
+  },
+  {
+    path: "/data",
+    element: <DataEngineer />,
+  },
+  {
+    path: "/frontend",
+    element: <FrontendEngineer />,
   },
 ]);
 
