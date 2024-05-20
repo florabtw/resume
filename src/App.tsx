@@ -20,14 +20,13 @@ function App() {
 
 const Background = styled.div`
   @media screen and (min-width: 960px) {
-    align-items: center;
     background: #fafafa;
     display: flex;
-    height: 100%;
+    height: 100vh;
     overflow-y: scroll;
     padding: 4rem 0;
     position: relative;
-    z-index: -3;
+    z-index: 0;
   }
 `;
 

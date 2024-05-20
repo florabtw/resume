@@ -17,7 +17,7 @@ export const Page = styled.div`
   @media screen and (min-width: 960px) {
     aspect-ratio: 0.7727; /* 8.5in / 11in */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+    margin: auto;
     position: relative;
     width: 800px;
     padding: 1rem 2rem 2rem;
