@@ -4,10 +4,34 @@ import Extras, { Extra } from "sections/Extras/Extras";
 import Header from "sections/Header/Header";
 import Projects from "sections/Projects/Projects";
 import { Page } from "components/Library";
+import styled from "styled-components";
+
+const Download = styled.a`
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  @media print {
+    display: none;
+  }
+
+  @media screen and (min-width: 960px) {
+    left: 400px;
+    right: auto;
+    top: -2.5rem;
+    transform: translateX(-50%);
+  }
+`;
 
 export default function Generic() {
   return (
     <Page>
+      <Download
+        download="FloraMoon-SWE-Resume.pdf"
+        href="/FloraMoon-SWE-Resume.pdf"
+      >
+        Download
+      </Download>
       <Header />
       <Experience>
         <Role
