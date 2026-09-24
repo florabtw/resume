@@ -18,6 +18,7 @@ export default function Experience({
 const dateFormat = new Intl.DateTimeFormat("en", {
   year: "numeric",
   month: "long",
+  timeZone: 'UTC',
 });
 
 function formatDate(date: Date | string) {

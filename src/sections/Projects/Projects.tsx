@@ -14,7 +14,7 @@ export default function Projects() {
       <Project
         title="scape.fashion"
         link="https://scape.fashion"
-        description="A passion project for my favorite video game involving data scraping and modeling, an ETL pipeline, Node & Express API, and React frontend."
+        description="A passion project for my favorite video game which required unique wiki parsing challenges."
       />
     </section>
   );

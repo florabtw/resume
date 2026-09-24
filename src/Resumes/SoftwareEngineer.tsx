@@ -8,11 +8,25 @@ import { Download, Page } from "components/Library";
 export default function SoftwareEngineer() {
   return (
     <Page>
-      <Download download href="/FloraMoon-SWE-Resume.pdf">
-        Download
+      <Download download="FloraMoon-SWE-Resume.pdf" href="/FloraMoon-SWE-Resume.pdf">
+        Download PDF
       </Download>
       <Header />
       <Experience>
+        <Role
+          title="Senior Fullstack Software Engineer"
+          company="Plume Clinic"
+          location="Remote"
+          start={new Date("2024-08-05")}
+          end="Present"
+        >
+          <li>
+            Technical lead for a new patient onboarding flow involving sustained cross-functional collaboration.
+          </li>
+          <li>
+            Developed the initial authentication flow and dashboard for member-facing features.
+          </li>
+        </Role>
         <Role
           title="Senior Software Engineer"
           company="HubSpot"
@@ -25,12 +39,7 @@ export default function SoftwareEngineer() {
             Typescript.
           </li>
           <li>
-            Developed a generic component library using React to enable quickly
-            creating a new marketplace.
-          </li>
-          <li>
-            Collaborated with Product and Design to redesign the marketplace for
-            a mobile-friendly experience.
+            Collaborated with Design to launch a mobile-friendly marketplace.
           </li>
         </Role>
         <Role
@@ -88,7 +97,7 @@ export default function SoftwareEngineer() {
           end={new Date("2018-07-31")}
         >
           <li>
-            Hired two new engineers to grow the engineering team to 5 people.
+            Led hiring process for two new engineers while maintaining new feature development.
           </li>
         </Role>
         <Role

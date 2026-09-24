@@ -56,17 +56,19 @@ export const Title = styled.h1`
 `;
 
 export const Download = styled.a`
-  position: absolute;
-  right: 2rem;
-  top: 2rem;
+  border-bottom: 2px solid var(--c-accent);
+  display: block;
+  padding: 0 0 0.5rem;
+  text-align: center;
 
   @media print {
     display: none;
   }
 
   @media screen and (min-width: 960px) {
+    border-bottom: none;
     left: 400px;
-    right: auto;
+    position: absolute;
     top: -2.5rem;
     transform: translateX(-50%);
   }

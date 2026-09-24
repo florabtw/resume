@@ -1,8 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import styled from "styled-components";
 
-import DataEngineer from "Resumes/DataEngineer";
-import FrontendEngineer from "Resumes/FrontendEngineer";
 import SoftwareEngineer from "Resumes/SoftwareEngineer";
 
 const router = createBrowserRouter([
@@ -13,14 +11,6 @@ const router = createBrowserRouter([
   {
     path: "/swe",
     element: <SoftwareEngineer />,
-  },
-  {
-    path: "/data",
-    element: <DataEngineer />,
-  },
-  {
-    path: "/frontend",
-    element: <FrontendEngineer />,
   },
 ]);
 
